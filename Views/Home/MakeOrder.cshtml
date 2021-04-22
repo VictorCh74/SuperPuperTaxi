@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Оформление заказа</title>
+</head>
+<body>
+            <form>
+                <input type="submit" value="Назад" asp-controller="Home" asp-action="Index" /><br /><br />
+            </form>   
+            <form method="post">
+                <label>Номер Телефона</label><br />
+                <input type="text" name="Order.Phone" /><br /><br />
+                <label>Пункт отправления</label><br />
+                <input type="text" name="Order.From" /><br /><br />
+                <label>Время отправления</label><br />
+                <input type="text" name="Order.DepartureTime" /><br /><br />
+                <label>Пункт прибытия</label><br />
+                <input type="text" name="Order.To" /><br /><br />
+                <input type="submit" value="Отправить" asp-controller="CompleteOrder" asp-action="RecordOrder" />
+            </form>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,31 @@
+
+<form method="POST">
+    <table style="text-align: left; width: 700px; height: 565px;" border="1" cellpadding="2" cellspacing="2">
+        <tbody>
+            <tr>
+                <th style="text-align: center; background-color: rgb(109, 241, 249); height: 44px; width: 100px;" colspan="2" rowspan="1">Manager Page</th>
+            </tr>
+            <tr>
+                <td style="width: 350px; height: 200px; text-align: center;">
+                    <button name="AddDriver"
+                            type="submit"
+                            style="width: 100px; height: 50px; background-color: rgb(245, 204, 235); font-size: 16px;"
+                            asp-controller="AddDriver" asp-action="AddDriver">
+                        Add Driver
+                    </button>
+                </td>
+                <td style="width: 350px; height: 200px; text-align: center;">
+
+                    <button 
+                        type="submit"
+                        asp-controller="RemoveDriver" asp-action="ShowDrivers"
+                        style="width: 100px; height: 50px; background-color: rgb(211, 238, 228); font-size: 16px;" name="RemoveDriver">
+                        Remove Driver
+                    </button>
+                </td> 
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+

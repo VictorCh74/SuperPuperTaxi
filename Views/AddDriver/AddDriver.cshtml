@@ -1,0 +1,29 @@
+﻿
+
+<!DOCTYPE html>
+
+<head>
+    <title>Страница администрирования</title>
+</head>
+<body>
+    <div>
+        <label > Введите нового водителя  </label><br /><br />
+        <form method="post">
+            <label>Фамилия</label><br />
+            <input type="text" name="Name" /><br /><br />
+            <label>Имя</label><br />
+            <input type="text" name="FirstName" /><br /><br />
+            <label>Номер Машины</label><br />
+            <input type="text" name="CarStateNumber" /><br /><br />
+            <label>Модель Машины</label><br />
+            <input type="text" name="CarModel" /><br /><br />
+            <label>Дневная оплата</label><br />
+            <input type="text" name="DaySalary" /><br /><br />
+            <label>Свободен</label><br />
+            <input type="radio" name="IsFree" value="IsFree" /><br /><br />
+            <label>Занят</label><br />
+            <input type="radio" name="IsFree" value="IsBusy" /><br /><br />
+            <input type="submit" value="Добавить" asp-controller="AddDriver" asp-action="CreateNewDriver" />
+        </form>
+    </div>
+</body>

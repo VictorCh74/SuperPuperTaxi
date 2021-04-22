@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "ShawDriversView";
+}
+
+<h2>Drivers employed</h2>
+<body>
+    <br /><br />
+    @foreach (TaxiDriver driver in ViewBag.Drivers)
+    {
+        <p>@driver.Id.ToString()   @driver.Name   @driver.FirstName</p>
+    }
+    <br /> <br />
+    <form method="GET">
+        <input type="number" name="Id" /><br /><br /><br />
+        <input type="submit" value="Удалить" asp-controller="RemoveDriver" asp-action="RemoveNow" />
+    </form>
+</body>
+
